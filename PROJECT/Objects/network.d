@@ -1,0 +1,35 @@
+.\objects\network.o: ..\NET\NetWork.c
+.\objects\network.o: E:\MDK for STM32\ARM\ARMCC\Bin\..\include\string.h
+.\objects\network.o: ..\NET\NetWork.h
+.\objects\network.o: ..\CMSIS\stm32f10x.h
+.\objects\network.o: ..\CMSIS\core_cm3.h
+.\objects\network.o: E:\MDK for STM32\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\network.o: ..\CMSIS\system_stm32f10x.h
+.\objects\network.o: ..\USR\stm32f10x_conf.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_adc.h
+.\objects\network.o: ..\CMSIS\stm32f10x.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_bkp.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_can.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_cec.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_crc.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_dac.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_dbgmcu.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_dma.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_exti.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_flash.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_fsmc.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_gpio.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_i2c.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_iwdg.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_pwr.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_rcc.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_rtc.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_sdio.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_spi.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_tim.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_usart.h
+.\objects\network.o: ..\STLibraries\inc\stm32f10x_wwdg.h
+.\objects\network.o: ..\STLibraries\inc\misc.h
+.\objects\network.o: ..\DRIVER\UART/uart.h
+.\objects\network.o: ..\DRIVER\LED/LED.h
+.\objects\network.o: ..\DRIVER\DELAY/Delay.h

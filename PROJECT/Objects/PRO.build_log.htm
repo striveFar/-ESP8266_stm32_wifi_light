@@ -1,0 +1,177 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: dfgdfg dgf, dfg, LIC=TIVNB-2BLXG-01QP1-C85DR-S24W4-6NLSA
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.24.1
+Toolchain Path:  E:\MDK for STM32\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.1.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+D:\毕业设计\WIFI Smart Lamp\PROJECT\PRO.uvprojx
+Project File Date:  02/24/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'E:\MDK for STM32\ARM\ARMCC\Bin'
+Rebuild target 'PRO'
+compiling stm32f10x_it.c...
+compiling Delay.c...
+compiling LED.c...
+compiling DHT11.c...
+compiling ADC.c...
+compiling NVIC.c...
+compiling stm32f10x_flash.c...
+compiling uart.c...
+compiling main.c...
+compiling IIC.c...
+compiling OLED.c...
+..\DRIVER\OLED\OLED.c(41): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	u16 cnfont_size = strlen(cnfont_index);
+..\DRIVER\OLED\OLED.c(265): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(str,"%d",number);
+..\DRIVER\OLED\OLED.c(268): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(str,"%X",number);
+..\DRIVER\OLED\OLED.c(271): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(str,"%o",number);
+..\DRIVER\OLED\OLED.c(274): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+  		sprintf(str,"%d",number);   //参数错误，按十进制处理
+..\DRIVER\OLED\OLED.c(278): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	for(i=strlen(str);i<ndigit;++i)
+..\DRIVER\OLED\OLED.c(312): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+  	for(count=0;count<strlen(str)/3;++count)
+..\DRIVER\OLED\OLED.c: 7 warnings, 0 errors
+compiling TIMx.c...
+compiling DMA.c...
+compiling Light.c...
+compiling misc.c...
+compiling FlashData.c...
+..\DRIVER\FLASH\FlashData.c(23): warning:  #550-D: variable "FLASHstatus"  was set but never used
+      FLASH_Status FLASHstatus = FLASH_COMPLETE;
+..\DRIVER\FLASH\FlashData.c: 1 warning, 0 errors
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+assembling startup_stm32f10x_md.s...
+compiling stm32f10x_tim.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+compiling NetWork.c...
+..\NET\NetWork.c(36): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      while(strstr(dest,src)==0 && --retry!=0)//绛夊緟涓插彛鎺ユ敹瀹屾瘯鎴栬秴鏃堕��鍑?
+..\NET\NetWork.c(36): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      while(strstr(dest,src)==0 && --retry!=0)//绛夊緟涓插彛鎺ユ敹瀹屾瘯鎴栬秴鏃堕��鍑?
+..\NET\NetWork.c(148): warning:  #223-D: function "sprintf" declared implicitly
+      sprintf(TXBuffer,"AT+CWJAP_CUR=\"%s\",\"%s\"\r\n",ssid,pwd);//杩炴帴鐩爣AP
+..\NET\NetWork.c(149): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+      sendString(
+SART2,TXBuffer);
+..\NET\NetWork.c(154): warning:  #940-D: missing return statement at end of non-void function "connectAP" 
+  }
+..\NET\NetWork.c(178): warning:  #223-D: function "sprintf" declared implicitly
+      sprintf(TXBuffer,"AT+CIPSTART=\"%s\",\"%s\",%d\r\n",mode,ip,port);
+..\NET\NetWork.c(179): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+      sendString(
+SART2,TXBuffer);
+..\NET\NetWork.c(237): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+      sendString(
+SART2,buffer); 
+..\NET\NetWork.c: 8 warnings, 0 errors
+compiling TLink.c...
+..\NET\TLink.c(59): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "u8 *"
+      sendBuffertoServer(buffer);
+..\NET\TLink.c(73): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      if ((u8)strstr(RXBuffer, "CLOSE"))
+..\NET\TLink.c(73): warning:  #767-D: conversion from pointer to smaller integer
+      if ((u8)strstr(RXBuffer, "CLOSE"))
+..\NET\TLink.c(81): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      if ((u8)strstr(RXBuffer, "bedroom_LIGHT_ON"))
+..\NET\TLink.c(81): warning:  #767-D: conversion from pointer to smaller integer
+      if ((u8)strstr(RXBuffer, "bedroom_LIGHT_ON"))
+..\NET\TLink.c(89): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      if ((u8)strstr(RXBuffer, "bedroom_LIGHT_OFF"))
+..\NET\TLink.c(89): warning:  #767-D: conversion from pointer to smaller integer
+      if ((u8)strstr(RXBuffer, "bedroom_LIGHT_OFF"))
+..\NET\TLink.c(97): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      if ((u8)strstr(RXBuffer, "living_LIGHT_ON"))
+..\NET\TLink.c(97): warning:  #767-D: conversion from pointer to smaller integer
+      if ((u8)strstr(RXBuffer, "living_LIGHT_ON"))
+..\NET\TLink.c(105): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      if ((u8)strstr(RXBuffer, "living_LIGHT_OFF"))
+..\NET\TLink.c(105): warning:  #767-D: conversion from pointer to smaller integer
+      if ((u8)strstr(RXBuffer, "living_LIGHT_OFF"))
+..\NET\TLink.c(113): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      if ((u8)strstr(RXBuffer, "kitchen_LIGHT_ON"))
+..\NET\TLink.c(113): warning:  #767-D: conversion from pointer to smaller integer
+      if ((u8)strstr(RXBuffer, "kitchen_LIGHT_ON"))
+..\NET\TLink.c(121): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      if ((u8)strstr(RXBuffer, "kitchen_LIGHT_OFF"))
+..\NET\TLink.c(121): warning:  #767-D: conversion from pointer to smaller integer
+      if ((u8)strstr(RXBuffer, "kitchen_LIGHT_OFF"))
+..\NET\TLink.c(131): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      if ((u8)strstr(RXBuffer, "ctrl_bed"))
+..\NET\TLink.c(131): warning:  #767-D: conversion from pointer to smaller integer
+      if ((u8)strstr(RXBuffer, "ctrl_bed"))
+..\NET\TLink.c(137): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      if ((u8)strstr(RXBuffer, "save_bed"))
+..\NET\TLink.c(137): warning:  #767-D: conversion from pointer to smaller integer
+      if ((u8)strstr(RXBuffer, "save_bed"))
+..\NET\TLink.c(143): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      if ((u8)strstr(RXBuffer, "ctrl_living"))
+..\NET\TLink.c(143): warning:  #767-D: conversion from pointer to smaller integer
+      if ((u8)strstr(RXBuffer, "ctrl_living"))
+..\NET\TLink.c(149): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      if ((u8)strstr(RXBuffer, "save_living"))
+..\NET\TLink.c(149): warning:  #767-D: conversion from pointer to smaller integer
+      if ((u8)strstr(RXBuffer, "save_living"))
+..\NET\TLink.c(156): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      if ((u8)strstr(RXBuffer, "ctrl_kitchen"))
+..\NET\TLink.c(156): warning:  #767-D: conversion from pointer to smaller integer
+      if ((u8)strstr(RXBuffer, "ctrl_kitchen"))
+..\NET\TLink.c(162): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      if ((u8)strstr(RXBuffer, "save_kitchen"))
+..\NET\TLink.c(162): warning:  #767-D: conversion from pointer to smaller integer
+      if ((u8)strstr(RXBuffer, "save_kitchen"))
+..\NET\TLink.c(170): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      if ((u8)strstr(RXBuffer, "BRIGHTNESSUP"))
+..\NET\TLink.c(170): warning:  #767-D: conversion from pointer to smaller integer
+      if ((u8)strstr(RXBuffer, "BRIGHTNESSUP"))
+..\NET\TLink.c(186): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+      if ((u8)strstr(RXBuffer, "BRIGHTNESSDOWN"))
+..\NET\TLink.c(186): warning:  #767-D: conversion from pointer to smaller integer
+      if ((u8)strstr(RXBuffer, "BRIGHTNESSDOWN"))
+..\NET\TLink.c: 31 warnings, 0 errors
+linking...
+Program Size: Code=9168 RO-data=6584 RW-data=32 ZI-data=1136  
+".\Objects\PRO.axf" - 0 Error(s), 47 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_PRO
+  E:\MDK for STM32\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
